@@ -1,0 +1,171 @@
+html {
+    font-family: 'Raleway', sans-serif;
+}
+section {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+div {
+    -webkit-transition: width 1s, height 1s; /* For Safari 3.1 to 6.0 */
+    transition: width 1s, height 1s;
+}
+.container {
+    position: relative;
+    flex: 50%;
+    width: 50%;
+    height: 100%;
+}
+#experience-container {
+    float: left;
+    background: url("../images/stpauls.jpeg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#education-container {
+    margin-left: 50%;
+    float: right;
+    background: url("../images/education.jpeg") no-repeat;
+    background-size: 100% 100%;
+    margin: 0;
+    /* border: 5px solid black; */
+}
+header {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    /* border: 5px solid black; */
+    background-color: #3B3B3B;
+}
+
+#profile-link-container {
+    position: absolute;
+    right: 0px;
+    float: right;
+    /* border: 5px solid black; */
+    flex: auto;
+}
+header img {
+    max-height: 50px;
+    max-width: 50px;
+    float: right;
+    display: inline-block;
+    margin: 5px;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family: 'Raleway', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    color: white;
+}
+
+.homepage-section img {
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 40px;
+    padding: 20px;
+    -webkit-transition: width 2s, height 4s;
+    transition: width 2s, height 4s;
+    transition: opacity 0.2s linear;
+}
+.text-home {
+    -webkit-transition: all 2s, ease 0s;
+    transition: all 2s, ease 0s;
+    transition-duration: 1s;
+}
+
+#text-home-title {
+    transition-duration: 1s;
+    left: 0;
+    top: 50%;
+    text-align: center;
+    align-content: center;
+    position: relative;
+}
+
+.next-text {
+    position: absolute;
+    top: 0;
+    transition: opacity 2s;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#education-text {
+    float: right;
+    right: 0;
+}
+#experience-text {
+    float: left;
+    left: 0;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+    opacity: 1;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:1000px) {
+    /* For mobile phones: */
+    #experience-container {
+        flex:100%;
+        width:100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #education-container {
+        flex:100%;
+        width:100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .row {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.education-button {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.education-button:hover {
+    -webkit-transform: translate(50%, -50%) rotate(180deg);
+    transform:rotate(180deg);
+    background: rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+    color: #999;
+    cursor: pointer;
+}
+
+/*
+border: 5px solid black;
+*/
