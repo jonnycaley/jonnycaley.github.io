@@ -5,79 +5,154 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> -->
 
-    <!-- <link rel="stylesheet" href="styles/reset.css"> CSS reset -->
-    <link rel="stylesheet" href="styles/master.css"> <!-- Resource style -->
-    <!-- <link rel="stylesheet" href="styles/demo.css"> Demo style -->
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/styles.css"> <!-- Resource style -->
 
     <title>Jonathan Caley</title>
 </head>
+
 <body>
 
-    <header>
+    <div class="MainContainer">
 
-        <div>
-            <h1>Jonathan Caley</h1>
-        </div>
+        <div class="ParallaxContainer">
+            <div class="HeaderContent">
 
-        <div id="profile-link-container">
-            <a href="https://github.com/jonnycaley" target="_blank">
-                <img src="images/github2.png"/>
-            </a>
-            <a href="mailto:jonathancaley@hotmail.co.uk" target="_blank">
-                <img src="images/email2.png"/>
-            </a>
-            <a href="https://www.linkedin.com/in/jonathan-caley-33667512b/" target="_blank">
-                <img src="images/linkedin2.png"/>
-            </a>
-        </div>
-
-    </header>
-
-    <section class="homepage-section">
-        <div class="container" id="experience-container">
-            <div class="overlay" id="overlay-experience">
-                <div class="text-overlay" id="text-overlay-title">
-                    <div>
+                <div class="HeaderText ParallaxText" id="HeaderTextContainer">
+                    <!-- Jonathan Caley -->
+                    <div class="HeaderText ParallaxText RevealAwaitTwo grow" id="ExperienceText">
                         Experience
                     </div>
-                    <div class="next-text" id="education-text">
+
+                    <div class="HeaderText ParallaxText RevealAwaitTwo grow" id="EducationText">
                         Education
                     </div>
-                    <div class="content-container">
-                        <div class="content" id="fidelity-introduction">
-                            <img src="images/fidelity.png"/>
+
+                </div>
+
+                <div class="ParallaxText RevealAwaitFour" id="AboutMeText">
+                    I am a passionate developer. Technology enables me to stay spontaneous and gives me an opportunity for creative fulfillment.
+                </div>
+
+                <div class="RevealAwaitThree" id="profile-link-container">
+                    <a href="https://github.com/jonnycaley" target="_blank">
+                        <img src="images/email3.png"/>
+                    </a>
+                    <a href="mailto:jonathancaley@hotmail.co.uk" target="_blank">
+                        <img src="images/email4.png"/>
+                    </a>
+                    <a href="https://www.linkedin.com/in/jonathan-caley-33667512b/" target="_blank">
+                        <img src="images/email5.png"/>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="ContentContainer">
+            <div class="Content" id="ExperienceContent">
+                <div class="Page" id="Page1">
+                    <div class="PageContent">
+                        <img class="reveal ContentImage ImageRight" src="images/stpauls2.jpg"/>
+                        <div class="reveal PageContentContainer ContainerLeft">
+                            <div class="title">
+                            </div>
+                            <div class="ContentText">
+                                Fidelity International 2017-2018 Placement Year - Technology Analyst
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="Page" id="Page2">
+                    <div class="PageContent">
+                        <img class="reveal ContentImage ImageLeft" src="images/bots.jpg"/>
+                        <div class="reveal PageContentContainer ContainerRight">
+                            <div class="title">
+                                Bots
+                            </div>
+                            <div class="ContentText">
+                                The start of my placement year entailed me leading bot development within Fidelity. I adapted quickly, learning a new programming language and attending a hackathon hosted by Microsoft to accelerate the process. Functionality of the bot included responding with employee information and assisting with instillation of software.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Page" id="Page3">
+                    <div class="PageContent">
+                        <img class="reveal ContentImage ImageRight" src="images/tedtalk.jpg"/>
+                        <div class="reveal PageContentContainer ContainerLeft">
+                            <div class="title">
+                                TedX 2017
+                            </div>
+                            <div class="ContentText">
+                                Post bot development I was assigned the role of lead Android developer. The project at focus during this time was TedX 2017. I was able to hit the ground running - implementing designers last minute alterations before the event went live.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Page" id="Page4">
+                    <div class="PageContent">
+                        <img class="reveal ContentImage ImageLeft" src="images/events.jpg"/>
+                        <div class="reveal PageContentContainer ContainerRight">
+                            <div class="title">
+                                Events
+                            </div>
+                            <div class="ContentText">
+                                Events enabled users to view upcoming events within Fidelity. It was during this time I was introduced to Jira - a project management tool. All requirements, developments and deployments were tracked and tested by an external application tester before releases were made public.
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="Page" id="Page5">
+                    <div class="PageContent">
+                        <img class="reveal ContentImage ImageRight" src="images/graphs.jpg"/>
+                        <div class="reveal PageContentContainer ContainerLeft">
+                            <div class="title">
+                                Toolbox
+                            </div>
+                            <div class="ContentText">
+                                Toolbox provided employees with complete support desk functionality on the go. It was throughout ongoing development periods I provided dynamic alternatives to otherwise strict layout regimes, including graph and chart implementation for support desk managers.
+                                <!-- I was able to offer dynamic alternatives to otherwise strict business regimes, an example of which being an analytics page displaying employee information to their managers. Data that would originally have been presented in a typical list format was instead displayed through multiple graphs and charts. -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Page" id="Page6">
+                    <div class="PageContent">
+                        <img class="reveal ContentImage ImageLeft" src="images/mvpkeyboard.jpg"/>
+                        <div class="reveal PageContentContainer ContainerRight">
+                            <div class="reveal title">
+                                Maintenance and improvements
+                            </div>
+                            <div class="reveal ContentText">
+                                My remaining time was spent proactively incorporating new libraries and SDK’s into applications where deemed necessary. I developed a working knowledge of architectural coding and its benefits when testing. The same architecture of which I implemented by both refactoring old and generating new code in a clean and maintainable MVP/MVVM architecture.
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container" id="education-container">
-            <div class="overlay" id="overlay-education">
-                <div class="text-overlay" id="text-overlay-title">
-                    <div>
-                        Education
-                    </div>
-                    <div class="next-text" id="experience-text">
-                        Experience
-                    </div>
 
-                    <div>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="content-container">
-                <div class="content" id="loughborough-introduction">
-
-                </div>
+            <div class="Content" id="EducationContent">
+                <p>A load of crap about my education!
+                </p>
+                <p>ʻO Lorem Ipsum kahi haʻahaʻa wale nō o ka paʻi a me keʻano o nāʻoihana. ʻO Lorem Ipsum ka 'ōlelo papahana maʻamau o kaʻoihana o ka makahiki 1500, i ka wā i lawe ai kekahi mea paʻi kiʻiʻole i keʻano o ka type a scrambled iā ia e hana i kahi puke kiko'ī. ʻAʻole i ola wale i kaʻelima mau kenekulia, akā,ʻo ka leleʻana hoʻi i nāʻano o ka lolouila, e hoʻololiʻoleʻia ana. Ua hoʻolahaʻia i nā makahiki 1960 me ka hoʻokuʻuʻana i nā pepa Letraset i loko o nā moʻolelo Lorem Ipsum, a me nā mea hou aku me ka polokalamu hoʻopuka pākī e like me Aldus PageMaker me nā papa o Lorem Ipsum.
+                </p>
+                <p>ʻO Lorem Ipsum kahi haʻahaʻa wale nō o ka paʻi a me keʻano o nāʻoihana. ʻO Lorem Ipsum ka 'ōlelo papahana maʻamau o kaʻoihana o ka makahiki 1500, i ka wā i lawe ai kekahi mea paʻi kiʻiʻole i keʻano o ka type a scrambled iā ia e hana i kahi puke kiko'ī. ʻAʻole i ola wale i kaʻelima mau kenekulia, akā,ʻo ka leleʻana hoʻi i nāʻano o ka lolouila, e hoʻololiʻoleʻia ana. Ua hoʻolahaʻia i nā makahiki 1960 me ka hoʻokuʻuʻana i nā pepa Letraset i loko o nā moʻolelo Lorem Ipsum, a me nā mea hou aku me ka polokalamu hoʻopuka pākī e like me Aldus PageMaker me nā papa o Lorem Ipsum.
+                </p>
             </div>
         </div>
-        <!-- <div class="left-div"></div>
-        <div class="right-div"></div> -->
-    </section>
-    <script src="scripts/main.js"></script> <!-- Resource JavaScript -->
-</body>
-</html>
+    </div>
+
+    <script src="scripts/master.js"></script> <!-- Resource JavaScript -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    </html>

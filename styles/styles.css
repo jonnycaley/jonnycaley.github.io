@@ -1,0 +1,241 @@
+html, body {
+    font-family: 'Comfortaa', cursive;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0;
+    padding: 0;
+}
+
+.HeaderContent {
+    overflow: auto;
+    font-family: 'Comfortaa', cursive;
+}
+
+.HeaderContent img {
+    max-height: 50px;
+    max-width: 50px;
+    float: right;
+    display: inline-block;
+    margin: 5px;
+}
+
+#HeaderTextContainer {
+    width: 100%;
+    /* border: 5px solid black; */
+}
+
+#profile-link-container {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    float: right;
+    flex: auto;
+}
+
+#HeaderTextContainer {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+#HeaderContent > div {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.Title, .Other {
+    height: 100%;
+    width: 100%;
+    font-family: Open Sans;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 200px;
+    position: absolute;
+    z-index: 100;
+    transform: translate(-50%, -10%);
+    visibility: collapse; /* visible */
+}
+
+.ParallaxText {
+    color: #59AAB0;
+}
+
+.HeaderText {
+    display: inline-block;
+    padding-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 30px;
+    /* border: 5px solid black; */
+
+}
+
+#AboutMeText {
+    position: absolute;
+    top: 65%;
+    margin-left: 15%;
+    margin-right: 10%;
+    color: #474646;
+    font-family: 'Comfortaa', cursive;
+}
+
+.Other {
+    top: 0;
+    transition: opacity 2s;
+    opacity: 0;  /* //opacity to 1 to show */
+    cursor: pointer;
+    right: -100%;
+    top: 35%;
+}
+
+.Title {
+    left: 50%;
+    top: 35%;
+}
+
+.MainContainer {
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.ContentContainer {
+    position: relative;
+    display: block;
+    background-color: white;
+    z-index: 1;
+}
+
+.Container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.Content {
+    /* max-width: 750px; */
+    margin: 0 auto;
+    /* padding: 75px 0; */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    -webkit-transition: width 1s, height 1s; /* For Safari 3.1 to 6.0 */
+    transition: width 1s, height 1s;
+    transition: opacity 0.2s linear;
+    opacity: 0;
+}
+
+.FadedContainer:hover .overlay {
+    opacity: 1;
+    cursor:pointer;
+}
+.FadedContainer:hover .Title {
+    visibility: visible;
+}
+.FadedContainer:hover {
+    cursor:pointer;
+}
+
+.ParallaxContainer {
+    display:flex;
+    flex: 1 0 auto;
+    position: relative;
+    z-index: -1;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    transform: translateZ(-1px) scale(2);
+    background: url("../images/mac-resized.jpg") no-repeat;
+    transition: opacity 1s linear;
+    opacity: 0;
+    background-size: 100%;
+    background-position: center;
+    text-align: center;
+    color: #0A0A0A;
+}
+#AboutText:hover {
+    cursor: pointer;
+}
+#ExperienceText:hover {
+    cursor: pointer;
+}
+#EducationText:hover {
+    cursor: pointer;
+}
+.Page {
+    border: 5px solid black;
+}
+
+.PageContent {
+    display: block;
+    position: relative;
+    margin: auto;
+    height: 800px;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    border: 5px solid red;
+}
+
+.title {
+    font-size: 32px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.ContentImage {
+    padding-top: 100px;
+    width: 800px;
+    height: 500px;
+}
+.ImageLeft {
+    padding-right: 150px;
+
+}
+
+.ImageRight {
+    padding-left: 150px;
+}
+
+.ContentText {
+    color: white;
+}
+
+.PageContentContainer {
+    /* right: 200px; */
+    position: absolute;
+    bottom: 30%;
+    width: 300px;
+    min-height: 300px;
+    padding: 25px;
+    background-color: #59AAB0;
+    transform: translateZ(-1px) scale(2);
+}
+
+.ContainerLeft {
+    left: 100px;
+}
+
+.ContainerRight {
+    right: 100px;
+}
+
+.grow:hover
+{
+    cursor: pointer;
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
