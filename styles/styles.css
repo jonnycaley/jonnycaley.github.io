@@ -11,23 +11,15 @@ html, body {
     font-family: 'Comfortaa', cursive;
 }
 
-.HeaderContent img {
-    max-height: 50px;
-    max-width: 50px;
-    float: right;
-    display: inline-block;
-    margin: 5px;
-}
 
 #HeaderTextContainer {
     width: 100%;
-    /* border: 5px solid black; */
 }
 
 #profile-link-container {
     position: absolute;
-    right: 0px;
-    top: 0px;
+    right: 8px;
+    top: 20px;
     float: right;
     flex: auto;
 }
@@ -107,8 +99,9 @@ html, body {
 .ContentContainer {
     position: relative;
     display: block;
-    background-color: white;
+    background-color: white; /* set to transparent for later testing of on hover of hidden right side bar*/
     z-index: 1;
+    /* border: 5px solid red; */
 }
 
 .Container {
@@ -175,18 +168,18 @@ html, body {
     cursor: pointer;
 }
 .Page {
-    border: 5px solid black;
+    /* border: 5px solid black; */
 }
 
 .PageContent {
     display: block;
     position: relative;
     margin: auto;
-    height: 800px;
+    height: 700px;
     align-content: center;
     align-items: center;
     text-align: center;
-    border: 5px solid red;
+    /* border: 5px solid red; */
 }
 
 .title {
@@ -200,14 +193,6 @@ html, body {
     width: 800px;
     height: 500px;
 }
-.ImageLeft {
-    padding-right: 150px;
-
-}
-
-.ImageRight {
-    padding-left: 150px;
-}
 
 .ContentText {
     color: white;
@@ -216,12 +201,18 @@ html, body {
 .PageContentContainer {
     /* right: 200px; */
     position: absolute;
-    bottom: 30%;
+    bottom: 20%;
     width: 300px;
     min-height: 300px;
     padding: 25px;
-    background-color: #59AAB0;
     transform: translateZ(-1px) scale(2);
+}
+.EducationContainer {
+    background-color: #59AAB0;
+}
+
+.ExperienceContainer {
+    background-color: #CACACA;
 }
 
 .ContainerLeft {
@@ -229,13 +220,115 @@ html, body {
 }
 
 .ContainerRight {
-    right: 100px;
+    right: 300px;
 }
 
-.grow:hover
-{
-    cursor: pointer;
-    -webkit-transform: scale(1.3);
-    -ms-transform: scale(1.3);
-    transform: scale(1.3);
+.ImageLeft {
+    padding-right: 400px;
+
+}
+
+.ImageRight {
+    /* padding-left: 500px; */
+}
+
+.grow:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    border-bottom: 2px solid;
+    margin-top: 10px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0,1);
+    transform: scale(0,1);
+}
+
+.grow:hover:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.LinkContainer img {
+    max-height: 30px;
+    max-width: 30px;
+    float: right;
+    display: inline-block;
+    margin: 15px;
+}
+
+.FixedLinkContainer {
+    float: right;
+    width: 50px;
+    /* border: 5px solid blue; */
+}
+
+.TextContainer {
+    display: table;
+    padding-right: 15px;
+    /* border: 5px solid red; */
+    color: black;
+    text-align: right;
+
+}
+
+#fixed-link-container {
+    position: fixed; /* holds on page */
+    /* overflow: auto; */
+    color: white;
+    height: 250px;
+    right: 0px;
+    top: 50%;
+    margin-top: -125px;
+    float: center;
+    flex: auto;
+    align-content: center;
+    /* height: 100%; */
+    z-index: 1; /* brings to front */
+    /* border: 5px solid black; */
+    pointer-event: none;/* stops scrolling interferance when hovering over*/
+    visibility: hidden;
+}
+
+#fixed-container-experience {
+
+}
+
+#fixed-container-education {
+  -webkit-animation-delay: 0.1s;
+}
+
+#fixed-container-github {
+  -webkit-animation-delay: 0.2s;
+}
+
+#fixed-container-hotmail {
+  -webkit-animation-delay: 0.3s;
+}
+
+#fixed-container-linkedin {
+  -webkit-animation-delay: 0.4s;
+}
+
+
+
+.FixedContainerText:hover {
+    pointer-event: none;/* stops scrolling interferance when hovering over*/
+    cursor:pointer;
+}
+
+#Test {
+    position: absolute;
+    bottom: 70px;
+    visibility: hidden;
+}
+
+#Test2 {
+    position: absolute;
+    top: -200px;
+    visibility: hidden;
 }

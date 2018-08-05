@@ -11,16 +11,40 @@
 
     <link rel="stylesheet" href="styles/styles.css"> <!-- Resource style -->
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"> <!-- fixed bar animations -->
+
     <title>Jonathan Caley</title>
 </head>
 
 <body>
 
-    <div class="MainContainer">
+    <div id="fixed-link-container">
+        <div class="TextContainer">
+            <div class="FixedContainerText grow" id="fixed-container-experience">
+                Experience
+            </div>
+
+            <div class="FixedContainerText grow" id="fixed-container-education">
+                Education
+            </div>
+        </div>
+        <div class="LinkContainer FixedLinkContainer">
+            <a href="https://github.com/jonnycaley" target="_blank">
+                <img id="fixed-container-github" src="images/githubblue.png"/>
+            </a>
+            <a href="mailto:jonathancaley@hotmail.co.uk" target="_blank">
+                <img id="fixed-container-hotmail" src="images/email3.png"/>
+            </a>
+            <a href="https://www.linkedin.com/in/jonathan-caley-33667512b/" target="_blank">
+                <img id="fixed-container-linkedin" src="images/linkedinblue.png"/>
+            </a>
+        </div>
+    </div>
+
+    <div class="MainContainer" id="maincontainer">
 
         <div class="ParallaxContainer">
-            <div class="HeaderContent">
-
+            <div class="LinkContainer HeaderContent">
                 <div class="HeaderText ParallaxText" id="HeaderTextContainer">
                     <!-- Jonathan Caley -->
                     <div class="HeaderText ParallaxText RevealAwaitTwo grow" id="ExperienceText">
@@ -37,15 +61,15 @@
                     I am a passionate developer. Technology enables me to stay spontaneous and gives me an opportunity for creative fulfillment.
                 </div>
 
-                <div class="RevealAwaitThree" id="profile-link-container">
+                <div class="LinkContainer RevealAwaitThree" id="profile-link-container">
                     <a href="https://github.com/jonnycaley" target="_blank">
-                        <img src="images/email3.png"/>
+                        <img src="images/githubblue.png"/>
                     </a>
                     <a href="mailto:jonathancaley@hotmail.co.uk" target="_blank">
-                        <img src="images/email4.png"/>
+                        <img src="images/email3.png"/>
                     </a>
                     <a href="https://www.linkedin.com/in/jonathan-caley-33667512b/" target="_blank">
-                        <img src="images/email5.png"/>
+                        <img src="images/linkedinblue.png"/>
                     </a>
                 </div>
 
@@ -56,13 +80,16 @@
             <div class="Content" id="ExperienceContent">
                 <div class="Page" id="Page1">
                     <div class="PageContent">
-                        <img class="reveal ContentImage ImageRight" src="images/stpauls2.jpg"/>
-                        <div class="reveal PageContentContainer ContainerLeft">
+                        <img class="reveal ContentImage ImageRight" src="images/stpauls2.jpg" id="test-image"/>
+                        <div class="reveal PageContentContainer EducationContainer ContainerLeft">
                             <div class="title">
                             </div>
                             <div class="ContentText">
                                 Fidelity International 2017-2018 Placement Year - Technology Analyst
                             </div>
+                        </div>
+                        <div id="Test2">
+                            Test
                         </div>
                     </div>
                 </div>
@@ -71,7 +98,7 @@
                 <div class="Page" id="Page2">
                     <div class="PageContent">
                         <img class="reveal ContentImage ImageLeft" src="images/bots.jpg"/>
-                        <div class="reveal PageContentContainer ContainerRight">
+                        <div class="reveal PageContentContainer EducationContainer ContainerRight">
                             <div class="title">
                                 Bots
                             </div>
@@ -85,7 +112,7 @@
                 <div class="Page" id="Page3">
                     <div class="PageContent">
                         <img class="reveal ContentImage ImageRight" src="images/tedtalk.jpg"/>
-                        <div class="reveal PageContentContainer ContainerLeft">
+                        <div class="reveal PageContentContainer EducationContainer ContainerLeft">
                             <div class="title">
                                 TedX 2017
                             </div>
@@ -99,7 +126,7 @@
                 <div class="Page" id="Page4">
                     <div class="PageContent">
                         <img class="reveal ContentImage ImageLeft" src="images/events.jpg"/>
-                        <div class="reveal PageContentContainer ContainerRight">
+                        <div class="reveal PageContentContainer EducationContainer ContainerRight">
                             <div class="title">
                                 Events
                             </div>
@@ -114,7 +141,7 @@
                 <div class="Page" id="Page5">
                     <div class="PageContent">
                         <img class="reveal ContentImage ImageRight" src="images/graphs.jpg"/>
-                        <div class="reveal PageContentContainer ContainerLeft">
+                        <div class="reveal PageContentContainer EducationContainer ContainerLeft">
                             <div class="title">
                                 Toolbox
                             </div>
@@ -129,12 +156,12 @@
                 <div class="Page" id="Page6">
                     <div class="PageContent">
                         <img class="reveal ContentImage ImageLeft" src="images/mvpkeyboard.jpg"/>
-                        <div class="reveal PageContentContainer ContainerRight">
+                        <div class="reveal PageContentContainer EducationContainer ContainerRight">
                             <div class="reveal title">
                                 Maintenance and improvements
                             </div>
                             <div class="reveal ContentText">
-                                My remaining time was spent proactively incorporating new libraries and SDK’s into applications where deemed necessary. I developed a working knowledge of architectural coding and its benefits when testing. The same architecture of which I implemented by both refactoring old and generating new code in a clean and maintainable MVP/MVVM architecture.
+                                A portion of my time was spent proactively incorporating new libraries and SDK’s into applications where necessary. I developed a working knowledge of architectural and implemented by both refactoring old code and generating new code in a clean and maintainable MVP/MVVM architecture.
                             </div>
                         </div>
                     </div>
@@ -142,12 +169,76 @@
             </div>
 
             <div class="Content" id="EducationContent">
-                <p>A load of crap about my education!
-                </p>
-                <p>ʻO Lorem Ipsum kahi haʻahaʻa wale nō o ka paʻi a me keʻano o nāʻoihana. ʻO Lorem Ipsum ka 'ōlelo papahana maʻamau o kaʻoihana o ka makahiki 1500, i ka wā i lawe ai kekahi mea paʻi kiʻiʻole i keʻano o ka type a scrambled iā ia e hana i kahi puke kiko'ī. ʻAʻole i ola wale i kaʻelima mau kenekulia, akā,ʻo ka leleʻana hoʻi i nāʻano o ka lolouila, e hoʻololiʻoleʻia ana. Ua hoʻolahaʻia i nā makahiki 1960 me ka hoʻokuʻuʻana i nā pepa Letraset i loko o nā moʻolelo Lorem Ipsum, a me nā mea hou aku me ka polokalamu hoʻopuka pākī e like me Aldus PageMaker me nā papa o Lorem Ipsum.
-                </p>
-                <p>ʻO Lorem Ipsum kahi haʻahaʻa wale nō o ka paʻi a me keʻano o nāʻoihana. ʻO Lorem Ipsum ka 'ōlelo papahana maʻamau o kaʻoihana o ka makahiki 1500, i ka wā i lawe ai kekahi mea paʻi kiʻiʻole i keʻano o ka type a scrambled iā ia e hana i kahi puke kiko'ī. ʻAʻole i ola wale i kaʻelima mau kenekulia, akā,ʻo ka leleʻana hoʻi i nāʻano o ka lolouila, e hoʻololiʻoleʻia ana. Ua hoʻolahaʻia i nā makahiki 1960 me ka hoʻokuʻuʻana i nā pepa Letraset i loko o nā moʻolelo Lorem Ipsum, a me nā mea hou aku me ka polokalamu hoʻopuka pākī e like me Aldus PageMaker me nā papa o Lorem Ipsum.
-                </p>
+                <div class="Page" id="Page1">
+                    <div class="PageContent">
+                        <img class="reveal ContentImage ImageRight" src="images/lecture.jpg"/>
+                        <div class="reveal PageContentContainer ExperienceContainer ContainerLeft">
+                            <div class="title">
+                            </div>
+                            <div class="ContentText">
+                                Loughborough University - Computer Science Bsc
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="Page" id="Page2">
+                    <div class="PageContent">
+                        <img class="reveal ContentImage ImageLeft" src="images/slidingtile.jpg"/>
+                        <div class="reveal PageContentContainer ExperienceContainer ContainerRight">
+                            <div class="title">
+                                Sliding Tile Puzzle
+                            </div>
+                            <div class="ContentText">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Page" id="Page3">
+                    <div class="PageContent">
+                        <img class="reveal ContentImage ImageRight" src="images/ingredients.jpg"/>
+                        <div class="reveal PageContentContainer ExperienceContainer ContainerLeft">
+                            <div class="title">
+                                EasyChef
+                            </div>
+                            <div class="ContentText">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Page" id="Page4">
+                    <div class="PageContent">
+                        <img class="reveal ContentImage ImageLeft" src="images/arduino.jpg"/>
+                        <div class="reveal PageContentContainer ExperienceContainer ContainerRight">
+                            <div class="title">
+                                Arduino board
+                            </div>
+                            <div class="ContentText">
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="Page" id="Page5">
+                    <div class="PageContent">
+                        <img class="reveal ContentImage ImageRight" src="images/crypto.jpg"/>
+                        <div class="reveal PageContentContainer ExperienceContainer ContainerLeft">
+                            <div class="title">
+                                Dissertation
+                            </div>
+                            <div class="ContentText">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
