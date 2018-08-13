@@ -11,6 +11,8 @@
 
     <link rel="stylesheet" href="styles/styles.css"> <!-- Resource style -->
 
+    <link rel="stylesheet" href="styles/hamburgers.css">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"> <!-- fixed bar animations -->
 
     <title>Jonathan Caley</title>
@@ -41,11 +43,24 @@
         </div>
     </div>
 
+
+    <div id="ToolbarContainer">
+        <div class="LargeText" id="ToolbarText">
+            Jonny Caley
+        </div>
+        <button class="hamburger hamburger--spring" type="button" id="toolbar-button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+    </div>
+
     <div class="MainContainer" id="maincontainer">
 
         <div class="ParallaxContainer">
             <div class="LinkContainer HeaderContent">
                 <div class="ParallaxText" id="HeaderTextContainer">
+
                     <div class="HeaderText ParallaxText RevealAwaitTwo DivHover" id="ExperienceText">
                         <span class="spanTest hover hover-center">Experience</span>
                     </div>
@@ -56,36 +71,31 @@
 
                 </div>
 
-                <div class="ParallaxText RevealAwaitFour" id="AboutMeText">
-                    I am a passionate developer. Technology enables me to stay spontaneous and gives me an opportunity for creative fulfilment.
+                <div class="ParallaxText RevealAwaitFour SmallText" id="AboutMeText">
+                    I aim to achieve perfection in my work, which is probably why it took me so many attempts to position this text
                 </div>
 
                 <div class="LinkContainer RevealAwaitThree" id="profile-link-container">
                     <a href="https://github.com/jonnycaley" target="_blank">
-                        <img class="circ" src="images/githubblue.png"/>
+                        <img class="circ" src="images/githubblue.png" id="parallax-container-github"/>
                     </a>
                     <a href="mailto:jonathancaley@hotmail.co.uk" target="_blank">
-                        <img class="circ" src="images/email3.png"/>
+                        <img class="circ" src="images/email3.png" id="parallax-container-email"/>
                     </a>
                     <a href="https://www.linkedin.com/in/jonathan-caley-33667512b/" target="_blank">
-                        <img class="circ" src="images/linkedinblue.png"/>
+                        <img class="circ" src="images/linkedinblue.png" id="parallax-container-linkedin"/>
                     </a>
                 </div>
 
             </div>
         </div>
 
-        <div class="ContentContainer">
-            <div class="Content" id="ExperienceContent">
-                <div class="Page" id="Page1">
-                    <div class="PageContent">
-                        <img class="reveal ContentImage ImageRight" src="images/stpauls2-smaller.jpg" id="test-image"/>
-                        <div class="reveal PageContentContainer EducationContainer ContainerLeft">
-                            <div class="ContentTitle">
-                            </div>
-                            <div class="ContentText">
-                                Fidelity International 2017-2018 Placement Year - Technology Analyst
-                            </div>
+        <div class="ContentContainer" id="ContentContainerId">
+            <div class="Content" id="AboutMeContent">
+                <div class="Page" id="Page0">
+                    <div class="PageContent LargePage">
+                        <div class="MediumText" id="about-content">
+                            <span><strong>Hello.</strong> My name is Jonny. I am a developer going into my final year at Lougborough University. I made this website to encapsulate some of my skills and achievements throughout my experience and education. </br></br>Enjoy.</span>
                         </div>
                         <div id="Test2">
                             Test
@@ -93,19 +103,37 @@
                     </div>
                 </div>
 
+            </div>
+            <div class="Content" id="ExperienceContent">
+
+
+                <div class="Page" id="Page1">
+                    <div class="PageContent MediumPage">
+                        <img class="reveal ContentImage ImageRight" src="images/stpauls2-smaller.jpg"/>
+                        <div class="reveal PageContentContainer EducationContainer ContainerLeft">
+                            <div class="ContentTitle LargeText">
+                                Fidelity International
+                            </div>
+                            <div class="ContentText MediumText">
+                                Technology Analyst
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
 
                 <div class="Page" id="Page2">
-                    <div class="PageContent">
+                    <div class="PageContent MediumPage">
                         <img class="reveal ContentImage ImageLeft" src="images/bots.jpg"/>
                         <div class="reveal PageContentContainer EducationContainer ContainerRight">
-                            <div class="ContentTitle">
+                            <div class="ContentTitle LargeText">
                                 Bots
                             </div>
-                            <div class="ContentText">
+                            <div class="ContentText MediumText">
                                 Utilising Visual Studio and attending a hackathon at Microsoft I began my placement developing bots.
                                 <!-- The start of my placement year entailed me leading bot development within Fidelity. I adapted quickly, learning a new programming language and attending a hackathon hosted by Microsoft to accelerate the process. //re-read   Functionality of the bot included responding with employee information and assisting with instillation of software. -->
                             </div>
-                            <div class="ContentReadMore">
+                            <div class="ContentReadMore MediumText">
                                 read more
                             </div>
                         </div>
@@ -113,16 +141,16 @@
                 </div>
 
                 <div class="Page" id="Page3">
-                    <div class="PageContent">
+                    <div class="PageContent MediumPage">
                         <img class="reveal ContentImage ImageRight" src="images/tedtalk-smaller.jpg"/>
                         <div class="reveal PageContentContainer EducationContainer ContainerLeft">
-                            <div class="ContentTitle">
+                            <div class="ContentTitle LargeText">
                                 TedX 2017
                             </div>
-                            <div class="ContentText">
+                            <div class="ContentText MediumText">
                                 Post bot development I was assigned the role of lead Android developer. The project at focus during this time was TedX 2017. <!-- I was able to hit the ground running - implementing designers last minute alterations before the event went live. -->
                             </div>
-                            <div class="ContentReadMore">
+                            <div class="ContentReadMore MediumText">
                                 read more
                             </div>
                         </div>
@@ -130,16 +158,16 @@
                 </div>
 
                 <div class="Page" id="Page4">
-                    <div class="PageContent">
+                    <div class="PageContent MediumPage">
                         <img class="reveal ContentImage ImageLeft" src="images/events-smaller.jpg"/>
                         <div class="reveal PageContentContainer EducationContainer ContainerRight">
-                            <div class="ContentTitle">
+                            <div class="ContentTitle LargeText">
                                 Events
                             </div>
-                            <div class="ContentText">
+                            <div class="ContentText MediumText">
                                 Events enabled users to view upcoming events within Fidelity. It was during this time I was introduced to Jira. <!-- - a project management tool. All requirements, developments and deployments were tracked and tested by an external application tester before releases were made public. -->
                             </div>
-                            <div class="ContentReadMore">
+                            <div class="ContentReadMore MediumText">
                                 read more
                             </div>
                         </div>
@@ -148,17 +176,17 @@
                 </div>
 
                 <div class="Page" id="Page5">
-                    <div class="PageContent">
+                    <div class="PageContent MediumPage">
                         <img class="reveal ContentImage ImageRight" src="images/graphs-smaller.jpg"/>
                         <div class="reveal PageContentContainer EducationContainer ContainerLeft">
-                            <div class="ContentTitle">
+                            <div class="ContentTitle LargeText">
                                 Toolbox
                             </div>
-                            <div class="ContentText">
+                            <div class="ContentText MediumText">
                                 Toolbox provided employees with complete support desk functionality on the go. I provided dynamic alternatives to otherwise strict regimes. <!-- , including graph and chart implementation for support desk managers. -->
                                 <!-- I was able to offer dynamic alternatives to otherwise strict business regimes, an example of which being an analytics page displaying employee information to their managers. Data that would originally have been presented in a typical list format was instead displayed through multiple graphs and charts. -->
                             </div>
-                            <div class="ContentReadMore">
+                            <div class="ContentReadMore MediumText">
                                 read more
                             </div>
                         </div>
@@ -166,16 +194,16 @@
                 </div>
 
                 <div class="Page" id="Page6">
-                    <div class="PageContent">
+                    <div class="PageContent MediumPage">
                         <img class="reveal ContentImage ImageLeft" src="images/mvpkeyboard.jpg"/>
                         <div class="reveal PageContentContainer EducationContainer ContainerRight">
-                            <div class="ContentTitle">
+                            <div class="ContentTitle LargeText">
                                 Maintenance
                             </div>
-                            <div class="ContentText">
-                                I proactively incorporating new libraries and SDK’s into applications where necessary.<!-- I developed a working knowledge of coding architecture including MVP and MVVM. and implemented by both refactoring old code and generating new code in a clean and maintainable MVP/MVVM architecture. -->
+                            <div class="ContentText MediumText">
+                                I proactively incorporated new libraries, SDK’s and architectural programming into applications where necessary.<!-- I developed a working knowledge of coding architecture including MVP and MVVM. and implemented by both refactoring old code and generating new code in a clean and maintainable MVP/MVVM architecture. -->
                             </div>
-                            <div class="ContentReadMore">
+                            <div class="ContentReadMore MediumText">
                                 read more
                             </div>
                         </div>
@@ -185,13 +213,14 @@
 
             <div class="Content" id="EducationContent">
                 <div class="Page" id="Page1">
-                    <div class="PageContent">
+                    <div class="PageContent MediumPage">
                         <img class="reveal ContentImage ImageRight" src="images/lecture-smaller.jpg"/>
                         <div class="reveal PageContentContainer ExperienceContainer ContainerLeft">
-                            <div class="ContentTitle">
+                            <div class="ContentTitle LargeText">
+                                Loughborough University
                             </div>
-                            <div class="ContentText">
-                                Loughborough University - Computer Science Bsc
+                            <div class="ContentText MediumText">
+                                Computer Science BSc
                             </div>
                         </div>
                     </div>
@@ -199,17 +228,17 @@
 
 
                 <div class="Page" id="Page2">
-                    <div class="PageContent">
+                    <div class="PageContent MediumPage">
                         <img class="reveal ContentImage ImageLeft" src="images/slidingtile-smaller.jpg"/>
                         <div class="reveal PageContentContainer ExperienceContainer ContainerRight">
-                            <div class="ContentTitle">
+                            <div class="ContentTitle LargeText">
                                 Sliding Tile Puzzle
                             </div>
-                            <div class="ContentText">
+                            <div class="ContentText MediumText">
                                 <!-- Written in Java using the BlueJ IDE, --> I developed a breadth-first-search algorithm designed to solve the sliding tile puzzle.
                             </div>
                             <a href="https://github.com/jonnycaley/Sliding-Tile-Puzzle" target="_blank">
-                                <div class="ContentReadMore ContentViewProject">
+                                <div class="ContentReadMore ContentViewProject MediumText">
                                     view project
                                 </div>
                             </a>
@@ -218,51 +247,55 @@
                 </div>
 
                 <div class="Page" id="Page3">
-                    <div class="PageContent">
+                    <div class="PageContent MediumPage">
                         <img class="reveal ContentImage ImageRight" src="images/ingredients-smaller.jpg"/>
                         <div class="reveal PageContentContainer ExperienceContainer ContainerLeft">
-                            <div class="ContentTitle">
+                            <div class="ContentTitle LargeText">
                                 EasyChef
                             </div>
-                            <div class="ContentText">
+                            <div class="ContentText MediumText">
                                 My first Android application recommended a variety of meals based off of ingredients the user owns. I achieved 100% in this coursework.
                             </div>
-                            <div class="ContentReadMore ContentViewProject">
-                                view project
-                            </div>
+                            <a href="https://github.com/jonnycaley/easyChef" target="_blank">
+                                <div class="ContentReadMore ContentViewProject MediumText">
+                                    view project
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
 
                 <div class="Page" id="Page4">
-                    <div class="PageContent">
+                    <div class="PageContent MediumPage">
                         <img class="reveal ContentImage ImageLeft" src="images/arduino.jpg"/>
                         <div class="reveal PageContentContainer ExperienceContainer ContainerRight">
-                            <div class="ContentTitle">
+                            <div class="ContentTitle LargeText">
                                 Arduino board
                             </div>
-                            <div class="ContentText">
+                            <div class="ContentText MediumText">
                                 A programme using an Arduino board interface to display current time, and alarm and snoozing functionality.
                             </div>
-                            <div class="ContentReadMore ContentViewProject">
-                                view project
-                            </div>
+                            <a href="https://github.com/jonnycaley/Arduino-Alarm-Clock" target="_blank">
+                                <div class="ContentReadMore ContentViewProject MediumText">
+                                    view project
+                                </div>
+                            </a>
                         </div>
 
                     </div>
                 </div>
 
                 <div class="Page" id="Page5">
-                    <div class="PageContent">
+                    <div class="PageContent MediumPage">
                         <img class="reveal ContentImage ImageRight" src="images/crypto-smaller.jpg"/>
                         <div class="reveal PageContentContainer ExperienceContainer ContainerLeft">
-                            <div class="ContentTitle">
+                            <div class="ContentTitle LargeText">
                                 Dissertation
                             </div>
-                            <div class="ContentText">
+                            <div class="ContentText MediumText">
                                 My final year project at university will be comprises of 2 parts, a cryptocurrency application and a currency price predictor.
                             </div>
-                            <div class="ContentReadMore ContentViewProject">
+                            <div class="ContentReadMore ContentViewProject MediumText">
                                 view project
                             </div>
                         </div>

@@ -28,7 +28,22 @@ $(document).ready(function(){
     sr.reveal('.RevealAwaitThree', { duration: 4000, reset: false, scale: 0.1 });
     sr.reveal('.RevealAwaitFour', { duration: 5000, reset: false, scale: 0.1 });
 
+    $(".hamburger").click(function(){
+        toggleHamburger();
+    });
+
 });
+
+var toolbarButton = document.getElementById("toolbar-button");
+
+
+function toggleHamburger() {
+    if(toolbarButton.classList.contains("is-active")){
+        $(".hamburger").removeClass("is-active");
+    } else {
+        $(".hamburger").addClass("is-active");
+    }
+}
 
 window.onload = function () {
     $('.ParallaxContainer').css('opacity','1');
@@ -38,22 +53,42 @@ var output = document.getElementById('maincontainer');
 
 var fidexLinkContainer = document.getElementById('fixed-link-container');
 
-output.addEventListener("scroll", function() {
-    var test = document.getElementById('Test2');
-    var testImage = document.getElementById('test-image');
+var toolbar = document.getElementById('ToolbarContainer');
 
-    if(isScrolledIntoView(test)){
+var contentContainer = document.getElementById('ContentContainerId');
+
+
+output.addEventListener("scroll", function() {
+
+    $('.PageContentContainer').each(function(){
+        $(this).css('margin-top', - $(window).scrollTop() / parseInt($(this).attr('scrollSpeed')));
+    });
+
+    if($(this).scrollTop() < 5){
         hideFixedContainer()
+        showParallaxContainer()
     } else {
         showFixedContainer()
+        hideParallaxContainer()
     }
+
 });
+
+var isInViewport = function (elem) {
+    var bounding = elem.getBoundingClientRect();
+    return (
+        bounding.top >= 0 &&
+        bounding.left >= 0 &&
+        bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+};
+
 
 var state = 0;
 
 function showFixedContainer() {
 
-    console.log("showing");
     fidexLinkContainer.style.visibility = "visible";
 
     $("#fixed-container-experience").addClass("animated fadeInRight");
@@ -72,10 +107,45 @@ function showFixedContainer() {
 
 }
 
+function showParallaxContainer() {
+    setTimeout(function(){
+
+        if(state == 0){
+
+            $("#ExperienceText").addClass("animated fadeInDown");
+            $("#EducationText").addClass("animated fadeInDown");
+            $("#parallax-container-github").addClass("animated fadeInDown");
+            $("#parallax-container-email").addClass("animated fadeInDown");
+            $("#parallax-container-linkedin").addClass("animated fadeInDown");
+
+            $("#ExperienceText").removeClass("fadeOutUp");
+            $("#EducationText").removeClass("fadeOutUp");
+            $("#parallax-container-github").removeClass("fadeOutUp");
+            $("#parallax-container-email").removeClass("fadeOutUp");
+            $("#parallax-container-linkedin").removeClass("fadeOutUp");
+        }
+    }, 500);
+}
+
+function hideParallaxContainer() {
+
+    $("#ExperienceText").removeClass("fadeInDown");
+    $("#EducationText").removeClass("fadeInDown");
+    $("#parallax-container-github").removeClass("fadeInDown");
+    $("#parallax-container-email").removeClass("fadeInDown");
+    $("#parallax-container-linkedin").removeClass("fadeInDown");
+
+    $("#ExperienceText").addClass("animated fadeOutUp");
+    $("#EducationText").addClass("animated fadeOutUp");
+    $("#parallax-container-github").addClass("animated fadeOutUp");
+    $("#parallax-container-email").addClass("animated fadeOutUp");
+    $("#parallax-container-linkedin").addClass("animated fadeOutUp");
+}
+
+
 function hideFixedContainer() {
 
     state = 0;
-    console.log("hiding");
     $("#fixed-container-experience").removeClass("fadeInRight");
     $("#fixed-container-education").removeClass("fadeInRight");
     $("#fixed-container-github").removeClass("fadeInRight");
@@ -87,12 +157,7 @@ function hideFixedContainer() {
     $("#fixed-container-github").addClass("fadeOutRight");
     $("#fixed-container-hotmail").addClass("fadeOutRight");
     $("#fixed-container-linkedin").addClass("fadeOutRight");
-
-
     stateChange()
-    // fidexLinkContainer.style.visibility = "collapse";
-
-    // fidexLinkContainer.style.zIndex = "0";
 }
 
 function stateChange() { //hides the fixed layout to prevent overlapping of links - needs the delay to allow the animation then checks if the state is still valid for it to collapse after the time
@@ -119,38 +184,33 @@ function isScrolledIntoView(elem)
 }
 
 
-
-
-
-
-
 var lFollowX = 0,
-    lFollowY = 0,
-    x = 0,
-    y = 0,
-    friction = 1 / 30;
+lFollowY = 0,
+x = 0,
+y = 0,
+friction = 1 / 30;
 
 function moveBackground() {
-  x += 3*(lFollowX - x) * friction;
-  y += 3*(lFollowY - y) * friction;
+    x += 3*(lFollowX - x) * friction;
+    y += 3*(lFollowY - y) * friction;
 
-  translate = 'translate(' + x + 'px, ' + y + 'px) translateZ(-1px) scale(2.1)';
+    translate = 'translate(' + x + 'px, ' + y + 'px) translateZ(-1px) scale(2.1)';
 
-  $('.ParallaxContainer').css({
-    '-webit-transform': translate,
-    '-moz-transform': translate,
-    'transform': translate
-  });
+    $('.ParallaxContainer').css({
+        '-webit-transform': translate,
+        '-moz-transform': translate,
+        'transform': translate
+    });
 
-  window.requestAnimationFrame(moveBackground);
+    window.requestAnimationFrame(moveBackground);
 }
 
 $(window).on('mousemove click', function(e) {
 
-  var lMouseX = Math.max(-100, Math.min(100, $(window).width() / 2 - e.clientX));
-  var lMouseY = Math.max(-100, Math.min(100, $(window).height() / 2 - e.clientY));
-  lFollowX = (20 * lMouseX) / 100; // 100 : 12 = lMouxeX : lFollow
-  lFollowY = (10 * lMouseY) / 100;
+    var lMouseX = Math.max(-100, Math.min(100, $(window).width() / 2 - e.clientX));
+    var lMouseY = Math.max(-100, Math.min(100, $(window).height() / 2 - e.clientY));
+    lFollowX = (20 * lMouseX) / 100; // 100 : 12 = lMouxeX : lFollow
+    lFollowY = (10 * lMouseY) / 100;
 
 });
 
