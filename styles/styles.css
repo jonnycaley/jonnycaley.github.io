@@ -1,3 +1,7 @@
+html * {
+    max-height: 9999999px;
+    -webkit-overflow-scrolling: auto; /* Stops scrolling immediately */
+}
 html, body {
     font-family: 'Comfortaa', cursive;
     font-size: 18px;
