@@ -574,6 +574,7 @@ box-shadow:  0 0 0 5px #fff, 0 0 0 6px #5CAAAF;
     }
 
     #ToolbarContainer {
+        visibility: visible;
         pointer-events: all;/* stops scrolling interferance when hovering over*/
         position: absolute;
         height: 80px;
@@ -599,7 +600,9 @@ box-shadow:  0 0 0 5px #fff, 0 0 0 6px #5CAAAF;
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-
+    #ToolbarContainer {
+        display: none;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
