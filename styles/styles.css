@@ -577,13 +577,15 @@ box-shadow:  0 0 0 5px #fff, 0 0 0 6px #5CAAAF;
     }
 
     #AboutMeText {
-        position: relative;
+        position: absolute;
         margin-left: 30%;
         margin-right: 30%;
         margin-bottom: 100px;
+        top: 100px;
         height: auto;
         color: #474646;
         font-family: 'Comfortaa', cursive;
+        border: 5px solid red;
     }
     .MediumPage {
         height: 400px;
