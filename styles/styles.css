@@ -580,7 +580,8 @@ box-shadow:  0 0 0 5px #fff, 0 0 0 6px #5CAAAF;
         position: relative;
         margin-left: 30%;
         margin-right: 30%;
-        top: 20%;
+        margin-bottom: 100px;
+        height: auto;
         color: #474646;
         font-family: 'Comfortaa', cursive;
     }

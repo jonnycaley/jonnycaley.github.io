@@ -41,13 +41,13 @@ function toggleHamburger() {
     if(toolbarButton.classList.contains("is-active")){
         $(".hamburger").removeClass("is-active");
         $("#ToolbarExpandPage").animate({height: '0vh'});
-        $(".MainContainer").css('overflow-y','scroll');
+        // $(".MainContainer").css('overflow-y','scroll');
         // $(".ParallaxContainer").css('overflow-y','scroll');
 
     } else {
         $(".hamburger").addClass("is-active");
         $("#ToolbarExpandPage").animate({height: '100vh'});
-        $(".MainContainer").css('overflow-y','hidden');
+        // $(".MainContainer").css('overflow-y','hidden');
         // $(".ParallaxContainer").css('overflow-y','hidden');
     }
 }
