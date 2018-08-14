@@ -157,7 +157,7 @@ html, body {
     background: url("../images/mac-resized.jpg") no-repeat;
     transition: opacity 1s linear;
     opacity: 0;
-    background-size: auto;
+    background-size: cover;
     background-position: center;
     text-align: center;
     color: #0A0A0A;
@@ -530,6 +530,7 @@ box-shadow:  0 0 0 5px #fff, 0 0 0 6px #5CAAAF;
 
     #AboutMeText {
         border: 5px solid blue;
+        width: 60%;
         top: 40%;
         left: 0px;
         margin-left: 20%;
