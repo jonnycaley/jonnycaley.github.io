@@ -527,9 +527,9 @@ box-shadow:  0 0 0 5px #fff, 0 0 0 6px #5CAAAF;
     }
 
     #AboutMeText {
-        border: 5px solid blue;
+        /* border: 5px solid blue; */
         width: 40%;
-        top: 30%;
+        top: 35%;
         left: 0px;
         margin-left: 30%;
         margin-right: 30%;
