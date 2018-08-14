@@ -49,8 +49,6 @@ var toolbarButton = document.getElementById("toolbar-button");
 function toggleHamburger() {
     if(toolbarButton.classList.contains("is-active")){
         closeToolbar();
-        $(".hamburger").removeClass("is-active");
-        $("#ToolbarExpandPage").animate({height: '0vh'});
         // $(".MainContainer").css('overflow-y','scroll');
         // $(".ParallaxContainer").css('overflow-y','scroll');
 
@@ -241,4 +239,6 @@ $(window).on('mousemove click', function(e) {
 
 });
 
-moveBackground();
+if ($(window).width() > 600) {
+   moveBackground();
+}

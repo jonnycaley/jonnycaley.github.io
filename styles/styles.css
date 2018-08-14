@@ -2,6 +2,10 @@ html * {
     max-height: 9999999px;
     -webkit-overflow-scrolling: auto; /* Stops scrolling immediately */
 }
+*:not(html) {
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
 html, body {
     font-family: 'Comfortaa', cursive;
     font-size: 18px;
@@ -98,7 +102,7 @@ html, body {
     overflow-x: hidden;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
-    background-color: black;
+    background-color: white;
 }
 
 .ContentContainer {
@@ -583,6 +587,8 @@ box-shadow:  0 0 0 5px #fff, 0 0 0 6px #5CAAAF;
         margin-bottom: 100px;
         height: auto;
         color: #474646;
+        background-color: none;
+        background: none;
         font-family: 'Comfortaa', cursive;
     }
     .MediumPage {
