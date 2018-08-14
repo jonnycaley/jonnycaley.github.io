@@ -26,7 +26,7 @@ $(document).ready(function(){
     // window.sr = ScrollReveal({ container: '.MainContainer', reset: false, scale: 0.1 });
     sr.reveal('.RevealAwaitTwo', { duration: 3000, reset: false, scale: 0.1 });
     sr.reveal('.RevealAwaitThree', { duration: 4000, reset: false, scale: 0.1 });
-    // sr.reveal('.RevealAwaitFour', { duration: 5000, reset: false, scale: 0.1 });
+    sr.reveal('.RevealAwaitFour', { duration: 5000, reset: false, scale: 0.1 });
 
     $(".hamburger").click(function(){
         toggleHamburger();

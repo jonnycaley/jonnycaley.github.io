@@ -155,13 +155,14 @@ html, body {
     align-items: center;
     transform: translateZ(-1px) scale(2);
     background: url("../images/mac-resized.jpg") no-repeat;
-
     transition: opacity 1s linear;
     opacity: 0;
-    background-size: cover;
+    background-size: auto;
     background-position: center;
     text-align: center;
     color: #0A0A0A;
+    /* border: 5px solid blue; */
+
 }
 #AboutText:hover {
     cursor: pointer;
@@ -247,16 +248,12 @@ html, body {
 }
 
 .PageContentContainer {
-    /* right: 200px; */
     position: absolute;
     bottom: 20%;
     width: 250px;
     min-height: 250px;
     padding: 50px;
     text-align: left;
-    /* transform: translateZ(-600px) scale(3); */
-    /* transform: translateZ(-1px) scale(1); */
-    /* transform: translateZ(-1px) scale(1); */
 }
 .EducationContainer {
     background-color: #59AAB0;
@@ -342,7 +339,6 @@ box-shadow:  0 0 0 5px #fff, 0 0 0 6px #5CAAAF;
     color: #A0A0A0;
     text-align: right;
     pointer-events: all;/* stops scrolling interferance when hovering over*/
-    /* width: 50px; */
     position: absolute;
     top: 10%;
     right: 0px;
@@ -533,9 +529,8 @@ box-shadow:  0 0 0 5px #fff, 0 0 0 6px #5CAAAF;
     }
 
     #AboutMeText {
-        border: 5px solid red;
-        position: absolute;
-        top: 20%;
+        border: 5px solid blue;
+        top: 40%;
         left: 0px;
         margin-left: 20%;
         margin-right: 20%;
@@ -564,8 +559,6 @@ box-shadow:  0 0 0 5px #fff, 0 0 0 6px #5CAAAF;
         height: 35%;
         min-height: 0px;
         left: 0px;
-    }
-    .ParallaxContainer {
     }
     .PageContentContainer * {
         margin-left: 20px;
