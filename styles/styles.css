@@ -151,6 +151,7 @@ html, body {
     z-index: -1;
     height: 100vh;
     width: 100%;
+    overflow-y: visible;
     justify-content: center;
     align-items: center;
     transform: translateZ(-1px) scale(2);
@@ -581,7 +582,7 @@ box-shadow:  0 0 0 5px #fff, 0 0 0 6px #5CAAAF;
         margin-left: 30%;
         margin-right: 30%;
         border: 5px solid red;
-        top: 35%;
+        top: 30%;
         color: #474646;
         font-family: 'Comfortaa', cursive;
     }
