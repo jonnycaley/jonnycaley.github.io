@@ -165,7 +165,6 @@ html, body {
     opacity: 0;
     text-align: center;
     color: #0A0A0A;
-    border: 5px solid red;
 }
 #AboutText:hover {
     cursor: pointer;
@@ -581,7 +580,7 @@ box-shadow:  0 0 0 5px #fff, 0 0 0 6px #5CAAAF;
         position: relative;
         margin-left: 30%;
         margin-right: 30%;
-        border: 5px solid red;
+        border: 5px solid blue;
         top: 30%;
         color: #474646;
         font-family: 'Comfortaa', cursive;
