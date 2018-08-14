@@ -155,7 +155,7 @@ html, body {
     align-items: center;
     transform: translateZ(-1px) scale(2);
     background: url("../images/mac-resized.jpg") no-repeat center center fixed;
-    background-size: cover;
+    background-size: cover;          /* 200% */
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -577,10 +577,12 @@ box-shadow:  0 0 0 5px #fff, 0 0 0 6px #5CAAAF;
     }
 
     #AboutMeText {
+        position: relative;
+        margin-left: 0%;
+        margin-right: 0%;
         border: 5px solid blue;
         top: 35%;
         color: #474646;
-        margin-left: 10%;
         font-family: 'Comfortaa', cursive;
     }
     .MediumPage {
