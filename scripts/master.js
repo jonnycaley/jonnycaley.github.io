@@ -46,6 +46,7 @@ function toggleHamburger() {
     } else {
         $(".hamburger").addClass("is-active");
         $("#ToolbarExpandPage").animate({height: '100vh'});
+        $(".MainContainer").css('overflow-y','hidden');
     }
 }
 

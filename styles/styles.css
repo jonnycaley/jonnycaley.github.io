@@ -154,13 +154,17 @@ html, body {
     justify-content: center;
     align-items: center;
     transform: translateZ(-1px) scale(2);
-    background: url("../images/mac-resized.jpg") no-repeat;
-    transition: opacity 1s linear;
-    opacity: 0;
+    background: url("../images/mac-resized.jpg") no-repeat center center fixed;
     background-size: cover;
     background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    transition: opacity 1s linear;
+    opacity: 0;
     text-align: center;
     color: #0A0A0A;
+    border: 5px solid red;
 }
 #AboutText:hover {
     cursor: pointer;
@@ -500,7 +504,7 @@ box-shadow:  0 0 0 5px #fff, 0 0 0 6px #5CAAAF;
 
 #toolbar-expand-text-container {
     height: inherit;
-    padding-top: 25vh;
+    padding-top: 20vh;
 }
 
 
@@ -516,13 +520,20 @@ box-shadow:  0 0 0 5px #fff, 0 0 0 6px #5CAAAF;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    z-index: 1000;
 }
 
 .ToolbarLinkContainer img {
     max-height: 40px;
     max-width: 40px;
     vertical-align: middle;
+    display: inline-block;
+    color: white;
+    float: center;
+    display: inline-block;
+    margin: 20px;
 }
+
 
 
 
