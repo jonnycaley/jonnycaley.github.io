@@ -512,8 +512,8 @@ box-shadow:  0 0 0 5px #fff, 0 0 0 6px #5CAAAF;
         display: none;
     }
     .SmallText {
-        font-size: 20px;
-        line-height: 32px;
+        font-size: 12px;
+        line-height: 16px;
     }
     .MediumText {
         font-size: 12px;
