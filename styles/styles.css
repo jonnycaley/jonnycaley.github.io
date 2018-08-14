@@ -2,9 +2,9 @@ html * {
     max-height: 9999999px;
     -webkit-overflow-scrolling: auto; /* Stops scrolling immediately */
 }
-*:not(html) {
+/* *:not(html) {
     -webkit-transform: translate3d(0, 0, 0);
-}
+} */
 
 html, body {
     font-family: 'Comfortaa', cursive;
