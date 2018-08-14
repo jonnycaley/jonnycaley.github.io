@@ -41,6 +41,8 @@ function toggleHamburger() {
     if(toolbarButton.classList.contains("is-active")){
         $(".hamburger").removeClass("is-active");
         $("#ToolbarExpandPage").animate({height: '0vh'});
+        $(".MainContainer").css('overflow-y','scroll');
+
     } else {
         $(".hamburger").addClass("is-active");
         $("#ToolbarExpandPage").animate({height: '100vh'});
