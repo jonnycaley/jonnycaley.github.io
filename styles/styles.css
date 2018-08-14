@@ -506,7 +506,7 @@ box-shadow:  0 0 0 5px #fff, 0 0 0 6px #5CAAAF;
         display: none;
     }
     .SmallText {
-        font-size: 12px;
+        font-size: 10px;
         line-height: 16px;
     }
     .MediumText {
@@ -529,7 +529,7 @@ box-shadow:  0 0 0 5px #fff, 0 0 0 6px #5CAAAF;
     #AboutMeText {
         border: 5px solid blue;
         width: 40%;
-        top: 40%;
+        top: 30%;
         left: 0px;
         margin-left: 30%;
         margin-right: 30%;
