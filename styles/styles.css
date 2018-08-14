@@ -150,7 +150,7 @@ html, body {
     position: relative;
     z-index: -1;
     height: 100vh;
-    width: 100%;
+    width: 100vh;
     justify-content: center;
     align-items: center;
     transform: translateZ(-1px) scale(2);
