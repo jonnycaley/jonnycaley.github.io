@@ -578,9 +578,9 @@ box-shadow:  0 0 0 5px #fff, 0 0 0 6px #5CAAAF;
 
     #AboutMeText {
         position: relative;
-        margin-left: auto;
-        margin-right: auto;
-        border: 5px solid blue;
+        margin-left: 30%;
+        margin-right: 30%;
+        border: 5px solid red;
         top: 35%;
         color: #474646;
         font-family: 'Comfortaa', cursive;
