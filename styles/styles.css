@@ -578,8 +578,8 @@ box-shadow:  0 0 0 5px #fff, 0 0 0 6px #5CAAAF;
 
     #AboutMeText {
         position: relative;
-        margin-left: 0%;
-        margin-right: 0%;
+        margin-left: auto;
+        margin-right: auto;
         border: 5px solid blue;
         top: 35%;
         color: #474646;
