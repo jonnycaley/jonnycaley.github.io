@@ -306,7 +306,6 @@ html, body {
     display: inline-block;
     margin: 20px;
 }
-
 /* .circ{
 vertical-align: middle;
 border-radius: 50%;
@@ -486,6 +485,46 @@ box-shadow:  0 0 0 5px #fff, 0 0 0 6px #5CAAAF;
 
 
 
+#ToolbarExpandPage {
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    z-index: 10;
+    overflow-y: hidden;
+    background: white;
+    color: #59AAB0;
+
+}
+
+#toolbar-expand-text-container {
+    height: inherit;
+    padding-top: 25vh;
+}
+
+
+
+.ToolbarExpandText {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+}
+
+#toolbar-link-container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.ToolbarLinkContainer img {
+    max-height: 40px;
+    max-width: 40px;
+    vertical-align: middle;
+}
+
+
 
 
 
@@ -527,7 +566,7 @@ box-shadow:  0 0 0 5px #fff, 0 0 0 6px #5CAAAF;
     }
 
     #AboutMeText {
-        border: 5px solid blue;
+        /* border: 5px solid blue; */
         width: 40%;
         top: 35%;
         left: 0px;

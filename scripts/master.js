@@ -40,8 +40,10 @@ var toolbarButton = document.getElementById("toolbar-button");
 function toggleHamburger() {
     if(toolbarButton.classList.contains("is-active")){
         $(".hamburger").removeClass("is-active");
+        $("#ToolbarExpandPage").animate({height: '0vh'});
     } else {
         $(".hamburger").addClass("is-active");
+        $("#ToolbarExpandPage").animate({height: '100vh'});
     }
 }
 

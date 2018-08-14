@@ -20,53 +20,78 @@
 
 <body>
 
-    <div id="fixed-link-container">
-        <div class="TextContainer">
-            <div class="DivHover FixedTextContainer" id="fixed-container-experience">
-                <span class="spanTest hover hover-right-to-left">Experience</span>
+    <section id="fixed-container">
+        <div id="fixed-link-container">
+            <div class="TextContainer">
+                <div class="DivHover FixedTextContainer" id="fixed-container-experience">
+                    <span class="hover hover-right-to-left">Experience</span>
+                </div>
+
+                <div class="DivHover FixedTextContainer" id="fixed-container-education">
+                    <span class="hover hover-right-to-left">Education</span>
+                </div>
             </div>
-
-            <div class="DivHover FixedTextContainer" id="fixed-container-education">
-                <span class="spanTest hover hover-right-to-left">Education</span>
+            <div class="LinkContainer FixedLinkContainer">
+                <a href="https://github.com/jonnycaley" target="_blank">
+                    <img class="circ" id="fixed-container-github" src="images/githubblue.png"/>
+                </a>
+                <a href="mailto:jonathancaley@hotmail.co.uk" target="_blank">
+                    <img class="circ"  id="fixed-container-hotmail" src="images/email3.png"/>
+                </a>
+                <a href="https://www.linkedin.com/in/jonathan-caley-33667512b/" target="_blank">
+                    <img class="circ" id="fixed-container-linkedin" src="images/linkedinblue.png"/>
+                </a>
             </div>
         </div>
-        <div class="LinkContainer FixedLinkContainer">
-            <a href="https://github.com/jonnycaley" target="_blank">
-                <img class="circ" id="fixed-container-github" src="images/githubblue.png"/>
-            </a>
-            <a href="mailto:jonathancaley@hotmail.co.uk" target="_blank">
-                <img class="circ"  id="fixed-container-hotmail" src="images/email3.png"/>
-            </a>
-            <a href="https://www.linkedin.com/in/jonathan-caley-33667512b/" target="_blank">
-                <img class="circ" id="fixed-container-linkedin" src="images/linkedinblue.png"/>
-            </a>
-        </div>
-    </div>
 
 
-    <div id="ToolbarContainer">
-        <div class="LargeText" id="ToolbarText">
-            Jonny Caley
+        <div id="ToolbarContainer">
+            <div class="LargeText" id="ToolbarText">
+                Jonny Caley
+            </div>
+            <button class="hamburger hamburger--spring" type="button" id="toolbar-button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
         </div>
-        <button class="hamburger hamburger--spring" type="button" id="toolbar-button">
-            <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-            </span>
-        </button>
-    </div>
+
+        <div id="ToolbarExpandPage">
+            <div id="toolbar-expand-text-container">
+                <div class="ToolbarExpandText LargeText" id="ExperienceTextToolbar">
+                    <span>Experience</span>
+                </div>
+                <div class="ToolbarExpandText LargeText" id="EducationTextToolbar">
+                    <span>Education</span>
+                </div>
+                <div class="ToolbarLinkContainer" id="toolbar-link-container">
+                    <a href="https://github.com/jonnycaley" target="_blank">
+                        <img class="circ" src="images/githubblue.png" id="parallax-container-github"/>
+                    </a>
+                    <a href="mailto:jonathancaley@hotmail.co.uk" target="_blank">
+                        <img class="circ" src="images/email3.png" id="parallax-container-email"/>
+                    </a>
+                    <a href="https://www.linkedin.com/in/jonathan-caley-33667512b/" target="_blank">
+                        <img class="circ" src="images/linkedinblue.png" id="parallax-container-linkedin"/>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
 
     <div class="MainContainer" id="maincontainer">
-
         <div class="ParallaxContainer">
             <div class="LinkContainer HeaderContent">
                 <div class="ParallaxText" id="HeaderTextContainer">
 
                     <div class="HeaderText ParallaxText RevealAwaitTwo DivHover" id="ExperienceText">
-                        <span class="spanTest hover hover-center">Experience</span>
+                        <span class="hover hover-center">Experience</span>
                     </div>
 
                     <div class="HeaderText ParallaxText RevealAwaitTwo DivHover" id="EducationText">
-                        <span class="spanTest hover hover-center">Education</span>
+                        <span class="hover hover-center">Education</span>
                     </div>
 
                 </div>
