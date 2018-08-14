@@ -14,6 +14,15 @@ $(document).ready(function(){
         scrollToView(educationContainer);
     });
 
+    $("#ExperienceTextToolbar").click(function(){
+        closeToolbar();
+        scrollToView(experienceContainer);
+    });
+    $("#EducationTextToolbar").click(function(){
+        closeToolbar();
+        scrollToView(educationContainer);
+    });
+
     $("#fixed-container-experience").click(function(){
         scrollToView(experienceContainer);
     });
@@ -39,18 +48,29 @@ var toolbarButton = document.getElementById("toolbar-button");
 
 function toggleHamburger() {
     if(toolbarButton.classList.contains("is-active")){
+        closeToolbar();
         $(".hamburger").removeClass("is-active");
         $("#ToolbarExpandPage").animate({height: '0vh'});
         // $(".MainContainer").css('overflow-y','scroll');
         // $(".ParallaxContainer").css('overflow-y','scroll');
 
     } else {
-        $(".hamburger").addClass("is-active");
-        $("#ToolbarExpandPage").animate({height: '100vh'});
+        openToolbar();
         // $(".MainContainer").css('overflow-y','hidden');
         // $(".ParallaxContainer").css('overflow-y','hidden');
     }
 }
+
+function closeToolbar() {
+    $(".hamburger").removeClass("is-active");
+    $("#ToolbarExpandPage").animate({height: '0vh'});
+}
+function openToolbar() {
+    $(".hamburger").addClass("is-active");
+    $("#ToolbarExpandPage").animate({height: '100vh'});
+}
+
+
 
 window.onload = function () {
     $('.ParallaxContainer').css('opacity','1');
