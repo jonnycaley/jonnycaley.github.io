@@ -424,7 +424,6 @@ box-shadow:  0 0 0 5px #fff, 0 0 0 6px #5CAAAF;
     padding: 0;
     transition: all 0.2s ease-in-out;
     position: relative;
-    font-size: 25px;
 }
 
 .MediumText {
@@ -457,6 +456,11 @@ box-shadow:  0 0 0 5px #fff, 0 0 0 6px #5CAAAF;
     right: 0;
     background-color: #5CAAAF;
 }
+.DivHover span.hover-right-to-left-white:after {
+    right: 0;
+    background-color: #ffffff;
+}
+
 .DivHover:hover {
     cursor: pointer;
     color: #5CAAAF;
