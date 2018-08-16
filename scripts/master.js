@@ -82,7 +82,6 @@ var toolbar = document.getElementById('ToolbarContainer');
 
 var contentContainer = document.getElementById('ContentContainerId');
 
-
 output.addEventListener("scroll", function() {
 
     $('.PageContentContainer').each(function(){
@@ -97,7 +96,22 @@ output.addEventListener("scroll", function() {
         hideParallaxContainer()
     }
 
+    if(getPositionOfElement() < 1){
+        console.log('white');
+        $('#ToolbarContainer').css('background-color','white');
+    } else {
+        console.log('none');
+        $('#ToolbarContainer').css('background-color','transparent');
+    }
+
 });
+
+function getPositionOfElement() {
+    var scrollTop = $(window).scrollTop(),
+    elementOffset = $('#ContentContainerId').offset().top,
+    distance      = (elementOffset - scrollTop);
+    return distance
+}
 
 var isInViewport = function (elem) {
     var bounding = elem.getBoundingClientRect();
@@ -240,5 +254,5 @@ $(window).on('mousemove click', function(e) {
 });
 
 if ($(window).width() > 600) {
-   moveBackground();
+    moveBackground();
 }
