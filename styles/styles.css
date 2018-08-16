@@ -159,7 +159,7 @@ html, body {
     justify-content: center;
     align-items: center;
     transform: translateZ(-1px) scale(2);
-    background: url("../images/mac-resized.jpg") no-repeat center center fixed;
+    background: url("../images/mac-resized.jpg") no-repeat; /* center center fixed; */
     background-size: cover;          /* 200% */
     background-position: center;
     -webkit-background-size: cover;
@@ -233,8 +233,10 @@ html, body {
 
 .ContentImage {
     padding-top: 100px;
-    width: 800px;
-    height: 500px;
+    width: 60%;
+    height: 85%;
+    /* width: 800px;
+    height: 500px; */
     object-fit: cover;
 }
 
@@ -540,6 +542,11 @@ box-shadow:  0 0 0 5px #fff, 0 0 0 6px #5CAAAF;
     float: center;
     display: inline-block;
     margin: 20px;
+}
+
+.LargeText {
+    font-size: 30px;
+    line-height: 30px;
 }
 
 
