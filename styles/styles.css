@@ -503,7 +503,9 @@ box-shadow:  0 0 0 5px #fff, 0 0 0 6px #5CAAAF;
 }
 
 
-
+.hamburger:focus {
+    outline: none;
+}
 
 
 
@@ -511,9 +513,9 @@ box-shadow:  0 0 0 5px #fff, 0 0 0 6px #5CAAAF;
     position: fixed;
     width: 100%;
     height: 0vh;
-    margin-top: 80px;
-    margin-bottom: 80px;
-    z-index: 10;
+    /* margin-top: 80px;
+    margin-bottom: 80px; */
+    z-index: 1;
     overflow-y: hidden;
     background: white;
     color: #59AAB0;
@@ -656,7 +658,7 @@ box-shadow:  0 0 0 5px #fff, 0 0 0 6px #5CAAAF;
         width: 100%;
         left: 0px;
         background-color: none;
-        z-index: 1; /* brings to front */
+        z-index: 2; /* brings to front */
     }
     #ToolbarText {
         padding: 0px;
