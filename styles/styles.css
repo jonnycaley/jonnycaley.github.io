@@ -255,7 +255,7 @@ html, body {
 }
 
 .overlay-blue {
-    background-color: #59AAB0;
+    background-color: #000000;
     color: white;
     opacity: 0;
 }
@@ -647,7 +647,8 @@ box-shadow:  0 0 0 5px #fff, 0 0 0 6px #5CAAAF;
     #about-content {
         margin-left: 10%;
         margin-right: 10%;
-        font-size: 3vw;
+        font-size: 5vw;
+        line-height: 6vh;
     }
     .overlay-text {
         padding-right: 0px;
