@@ -314,9 +314,6 @@ html, body {
     bottom: 40px;
 }
 
-.ContentViewProject {
-}
-
 .PageContentContainer {
     position: absolute;
     bottom: 35%;
@@ -504,9 +501,6 @@ box-shadow:  0 0 0 5px #fff, 0 0 0 6px #5CAAAF;
     transition-duration: 0.5s;
     opacity: 0;
 }
-.DivHover {
-    /* border: 5px solid black; */
-}
 .DivHover span.hover-center:before {
     left: calc(50%);
     background-color: #5CAAAF;
@@ -655,7 +649,11 @@ box-shadow:  0 0 0 5px #fff, 0 0 0 6px #5CAAAF;
         margin-right: 10%;
         font-size: 3vw;
     }
-
+    .overlay-text {
+        padding-right: 0px;
+        font-size: 2.8vw;
+        overflow-y: hidden;
+    }
     #AboutMeText {
         position: relative;
         margin-left: 30%;
@@ -696,6 +694,8 @@ box-shadow:  0 0 0 5px #fff, 0 0 0 6px #5CAAAF;
     .PageContentContainer * {
         margin-left: 20px;
         margin-right: 20px;
+        left: 0px;
+
     }
     .ContentTitle {
         margin: 20px;

@@ -145,11 +145,13 @@ function toggleOverlay5() {
     }
 }
 
+var opacity = '0.8'
+
 
 
 function showOverlay1() {
-    $('#overlay1').css('opacity', '1');
-    $('#content-overlay-1').css('opacity', '1');
+    $('#overlay1').css('opacity', opacity);
+    $('#content-overlay-1').css('opacity', opacity);
 }
 
 function hideOverlay1() {
@@ -160,8 +162,8 @@ function hideOverlay1() {
 
 
 function showOverlay2() {
-    $('#overlay2').css('opacity', '1');
-    $('#content-overlay-2').css('opacity', '1');
+    $('#overlay2').css('opacity', opacity);
+    $('#content-overlay-2').css('opacity', opacity);
 }
 
 function hideOverlay2() {
@@ -172,8 +174,8 @@ function hideOverlay2() {
 
 
 function showOverlay3() {
-    $('#overlay3').css('opacity', '1');
-    $('#content-overlay-3').css('opacity', '1');
+    $('#overlay3').css('opacity', opacity);
+    $('#content-overlay-3').css('opacity', opacity);
 }
 
 function hideOverlay3() {
@@ -184,8 +186,8 @@ function hideOverlay3() {
 
 
 function showOverlay4() {
-    $('#overlay4').css('opacity', '1');
-    $('#content-overlay-4').css('opacity', '1');
+    $('#overlay4').css('opacity', opacity);
+    $('#content-overlay-4').css('opacity', opacity);
 }
 
 function hideOverlay4() {
@@ -196,8 +198,8 @@ function hideOverlay4() {
 
 
 function showOverlay5() {
-    $('#overlay5').css('opacity', '1');
-    $('#content-overlay-5').css('opacity', '1');
+    $('#overlay5').css('opacity', opacity);
+    $('#content-overlay-5').css('opacity', opacity);
 }
 
 function hideOverlay5() {
