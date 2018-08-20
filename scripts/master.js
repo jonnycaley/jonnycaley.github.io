@@ -41,18 +41,9 @@ $(document).ready(function(){
         toggleHamburger();
     });
 
-    $('#DivHover1').hover(function() {
-        $('#overlay1').css('width', '100%');
-        $('#overlay1').css('left', '0');
-    }, function() {
-        $('#overlay1').css('width', '0');
-        $('#overlay1').css('left', '100%');
-    });
-
 });
 
 var toolbarButton = document.getElementById("toolbar-button");
-
 
 function toggleHamburger() {
     if(toolbarButton.classList.contains("is-active")){

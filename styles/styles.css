@@ -8,8 +8,6 @@ html * {
 
 html, body {
     font-family: 'Comfortaa', cursive;
-    font-size: 18px;
-    line-height: 28px;
     margin: 0;
     padding: 0;
     overflow-y: scroll; /* has to be scroll, not auto */
@@ -49,7 +47,7 @@ html, body {
     font-family: Open Sans;
     color: white;
     text-align: center;
-    font-size: 50px;
+    font-size: 3vw;
     font-weight: 800;
     line-height: 200px;
     position: absolute;
@@ -69,7 +67,6 @@ html, body {
     margin-right: 10px;
     font-size: 30px;
     /* border: 5px solid black; */
-
 }
 
 #AboutMeText {
@@ -177,13 +174,16 @@ html, body {
     align-content: center;
     align-items: center;
     text-align: center;
-    border: 5px solid blue;
 }
 .MediumPage {
-    height: 700px;
+    height: 100vh;
+    /* border: 5px solid blue; */
+
+    /* height: 700px; */
 }
 .LargePage {
-    height: 700px;
+    height: 80vh;
+    /* height: 700px; */3
 }
 .bold {
     font-style: bold;
@@ -196,7 +196,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 2vw;
     line-height: 50px;
     text-align: left;
     color: #59AAB0;
@@ -221,7 +221,6 @@ html, body {
 
 .ContainerImage {
     position: relative;
-    border: 5px solid green;
     margin-top: 7.5%;
     /* margin-bottom: 15%; */
     width: 60%;
@@ -243,22 +242,60 @@ html, body {
     object-fit: cover;
 }
 
-#overlay1 {
-  position: absolute;
-  bottom: 0;
-  left: 100%;
-  right: 0;
-  width: 0;
-  background-color: #008CBA;
-  overflow: hidden;
-  height: 100%;
-  transition: .5s ease;
-  z-index: 101;
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    overflow: scroll;
+    height: 100%;
+    transition: 0.5s ease;
+    z-index: 101;
 }
 
-#DivHover1:hover ~ #overlay1 {
-  width: 100%;
-  left: 0;
+.overlay-blue {
+    background-color: #59AAB0;
+    color: white;
+    opacity: 0;
+}
+.content-overlay {
+    color: white;
+}
+
+.content-overlay-left {
+    opacity: 0;
+}
+
+.content-overlay-right {
+    opacity: 0;
+}
+
+.overlay-text {
+    color: white;
+    font-size: 1.5vw;
+    position: relative;
+    left: 0%;
+    margin: 5%;
+    padding-right: 25%;
+    opacity: 1;
+    z-index: 102;
+    text-align: left;
+}
+
+.text-left {
+    right: 25%;
+}
+
+.text-right {
+    left: 25%;
+}
+
+.overlayImages {
+    position: relative;
+    bottom: 0%;
+    border: 5px solid red;
+    margin: 5%;
 }
 
 .ContentText {
@@ -282,7 +319,7 @@ html, body {
 
 .PageContentContainer {
     position: absolute;
-    bottom: 20%;
+    bottom: 35%;
     width: 20%;
     min-width: 250px;
     min-height: 40%;
@@ -333,8 +370,8 @@ html, body {
 }
 
 .LinkContainer img {
-    max-height: 25px;
-    max-width: 25px;
+    max-height: 2.2vw;
+    max-width: 2.2vw;
     float: right;
     display: inline-block;
     margin: 20px;
@@ -453,7 +490,7 @@ box-shadow:  0 0 0 5px #fff, 0 0 0 6px #5CAAAF;
 }
 
 .MediumText {
-    font-size: 18px;
+    font-size: 1.5vw;
 }
 
 .DivHover span:before, .DivHover span:after {
@@ -482,6 +519,7 @@ box-shadow:  0 0 0 5px #fff, 0 0 0 6px #5CAAAF;
     right: 0;
     background-color: #5CAAAF;
 }
+
 .DivHover span.hover-right-to-left-white:after {
     right: 0;
     background-color: #ffffff;
@@ -571,7 +609,7 @@ box-shadow:  0 0 0 5px #fff, 0 0 0 6px #5CAAAF;
 }
 
 .LargeText {
-    font-size: 30px;
+    font-size: 2vw;
     line-height: 30px;
 }
 
@@ -615,6 +653,7 @@ box-shadow:  0 0 0 5px #fff, 0 0 0 6px #5CAAAF;
     #about-content {
         margin-left: 10%;
         margin-right: 10%;
+        font-size: 3vw;
     }
 
     #AboutMeText {
@@ -688,6 +727,17 @@ box-shadow:  0 0 0 5px #fff, 0 0 0 6px #5CAAAF;
         right: 0px;
         top: 0px;
         padding-top: 30px;
+    }
+    .ImageRight {
+        margin-left: 0%;
+    }
+    .ImageLeft {
+        margin-left: 0%;
+    }
+    .ContainerImage {
+        width: 100%;
+        margin-top: 0%;
+        height: 65%
     }
 }
 
