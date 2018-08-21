@@ -81,6 +81,9 @@ var toolbar = document.getElementById('ToolbarContainer');
 
 var contentContainer = document.getElementById('ContentContainerId');
 
+var gear1 = document.querySelector(".gear1");
+var gear2 = document.querySelector(".gear2");
+
 output.addEventListener("scroll", function() {
 
     $('.PageContentContainer').each(function(){
@@ -95,7 +98,7 @@ output.addEventListener("scroll", function() {
         hideParallaxContainer()
     }
 
-    if(getPositionOfElement() < 1){
+    if(getPositionOfContent() < 1){
         console.log('white');
         $('#ToolbarContainer').css('background-color','white');
     } else {
@@ -103,9 +106,37 @@ output.addEventListener("scroll", function() {
         $('#ToolbarContainer').css('background-color','transparent');
     }
 
+    if (getPositionOfEducation() < 1){
+        $('#middle-text').text("Education");
+    } else {
+        $('#middle-text').text("Experience");
+    }
+
+    if(getPositionOfExperience() < 1){
+        $('#middle-text').css('opacity','0.05');
+    } else {
+        $('#middle-text').css('opacity','0');
+    }
+
+    gear1.style.transform = "rotate(" + ($(this).scrollTop()) + "deg)";
+    gear2.style.transform = "rotate(-" + ($(this).scrollTop()) + "deg)";
+
 });
 
-function getPositionOfElement() {
+function getPositionOfExperience() {
+    var scrollTop = $(window).scrollTop(),
+    elementOffset = $('#ExperienceContent').offset().top,
+    distance      = (elementOffset - scrollTop);
+    return distance
+}
+function getPositionOfEducation() {
+    var scrollTop = $(window).scrollTop(),
+    elementOffset = $('#EducationContent').offset().top,
+    distance      = (elementOffset - scrollTop);
+    return distance
+}
+
+function getPositionOfContent() {
     var scrollTop = $(window).scrollTop(),
     elementOffset = $('#ContentContainerId').offset().top,
     distance      = (elementOffset - scrollTop);
