@@ -82,7 +82,6 @@ $(document).ready(function(){
     });
 });
 
-
 var isOverlayOpened1 = false;
 var isOverlayOpened2 = false;
 var isOverlayOpened3 = false;
@@ -93,20 +92,28 @@ var isOverlayOpened5 = false;
 function toggleOverlay1() {
     if(!isOverlayOpened1) {
         showOverlay1();
+        $('#SpanText1').text("read less");
         isOverlayOpened1 = true;
     } else {
         hideOverlay1();
+        $('#SpanText1').text("read more");
         isOverlayOpened1 = false;
     }
+}
+
+if ($(window).width() > 750) {
+    moveBackground();
 }
 
 
 function toggleOverlay2() {
     if(!isOverlayOpened2) {
         showOverlay2();
+        $('#SpanText2').text("read less");
         isOverlayOpened2 = true;
     } else {
         hideOverlay2();
+        $('#SpanText2').text("read more");
         isOverlayOpened2 = false;
     }
 }
@@ -115,9 +122,11 @@ function toggleOverlay2() {
 function toggleOverlay3() {
     if(!isOverlayOpened3) {
         showOverlay3();
+        $('#SpanText3').text("read less");
         isOverlayOpened3 = true;
     } else {
         hideOverlay3();
+        $('#SpanText3').text("read more");
         isOverlayOpened3 = false;
     }
 }
@@ -127,9 +136,11 @@ function toggleOverlay3() {
 function toggleOverlay4() {
     if(!isOverlayOpened4) {
         showOverlay4();
+        $('#SpanText4').text("read less");
         isOverlayOpened4 = true;
     } else {
         hideOverlay4();
+        $('#SpanText4').text("read more");
         isOverlayOpened4 = false;
     }
 }
@@ -138,9 +149,12 @@ function toggleOverlay4() {
 function toggleOverlay5() {
     if(!isOverlayOpened5) {
         showOverlay5();
+        $('#SpanText5').text("read less");
         isOverlayOpened5 = true;
     } else {
         hideOverlay5();
+        $('#SpanText5').text("read more");
+
         isOverlayOpened5 = false;
     }
 }

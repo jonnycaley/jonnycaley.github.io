@@ -683,6 +683,10 @@ box-shadow:  0 0 0 5px #fff, 0 0 0 6px #5CAAAF;
     .HolderReadMore {
         bottom: 5px;
     }
+    .DivHover span.hover-right-to-left-white:after {
+        /* right: 0; */
+        background-color: transparent;
+    }
     .PageContentContainer {
         position: absolute;
         width: 100%;

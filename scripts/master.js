@@ -252,6 +252,6 @@ $(window).on('mousemove click', function(e) {
 
 });
 
-if ($(window).width() > 600) {
+if ($(window).width() > 750) {
     moveBackground();
 }
