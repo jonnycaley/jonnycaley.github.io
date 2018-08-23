@@ -43,6 +43,13 @@ $(document).ready(function(){
 
 });
 
+window.addEventListener("load",function() {
+    setTimeout(function(){
+        // This hides the address bar:
+        window.scrollTo(0, 1);
+    }, 0);
+});
+
 var toolbarButton = document.getElementById("toolbar-button");
 
 function toggleHamburger() {
