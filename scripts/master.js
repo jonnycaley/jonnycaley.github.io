@@ -121,6 +121,7 @@ output.addEventListener("scroll", function() {
     gear1.style.transform = "rotate(" + ($(this).scrollTop()) + "deg)";
     gear2.style.transform = "rotate(-" + ($(this).scrollTop()) + "deg)";
 
+
 });
 
 function getPositionOfExperience() {

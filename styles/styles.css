@@ -222,6 +222,7 @@ html, body {
 
     /* height: 700px; */
 }
+
 .LargePage {
     height: 80vh;
     /* height: 700px; */3
@@ -464,7 +465,7 @@ box-shadow:  0 0 0 5px #fff, 0 0 0 6px #5CAAAF;
 
 }
 
-div#ExperienceContent {
+#ExperienceContent {
     margin-top: -35vh;
 }
 
@@ -551,7 +552,7 @@ div#ExperienceContent {
 }
 
 .MediumText {
-    font-size: 1.5vw;
+    font-size: 1.4vw;
 }
 
 .DivHover span:before, .DivHover span:after {
@@ -631,7 +632,7 @@ div#ExperienceContent {
     overflow-y: hidden;
     background: white;
     color: #59AAB0;
-
+    font-size: 0vh;
 }
 
 #toolbar-expand-text-container {
@@ -736,6 +737,12 @@ div#ExperienceContent {
     .LargePage {
         height: 600px;
     }
+    #ExperienceContent {
+        margin-top: -15vh;
+    }
+    .MiddleText {
+        visibility: collapse;
+    }
     .ContentImage {
         position: absolute;
         width: 100%;
@@ -807,6 +814,15 @@ div#ExperienceContent {
         width: 100%;
         margin-top: 0%;
         height: 65%
+    }
+}
+
+@media only screen and (max-width: 750px) and (orientation: landscape) {
+    #about-content {
+        line-height: 10vh;
+    }
+    #ExperienceContent {
+        margin-top: 75vh;
     }
 }
 
