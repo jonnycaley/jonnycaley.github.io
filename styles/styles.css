@@ -717,7 +717,7 @@ box-shadow:  0 0 0 5px #fff, 0 0 0 6px #5CAAAF;
     }
     .overlay-text {
         padding-right: 0px;
-        font-size: 2.8vw;
+        font-size: 3.4vw;
         overflow-y: hidden;
     }
     #AboutMeText {
@@ -809,6 +809,9 @@ box-shadow:  0 0 0 5px #fff, 0 0 0 6px #5CAAAF;
     }
     .ImageLeft {
         margin-left: 0%;
+    }
+    .text-right {
+        left: 0;
     }
     .ContainerImage {
         width: 100%;
