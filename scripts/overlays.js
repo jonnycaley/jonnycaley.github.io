@@ -6,15 +6,15 @@ $(document).ready(function(){
         toggleOverlay1();
     });
 
-    // $('#DivHover1').hover(function() {
-    //     if(!isOverlayOpened1){
-    //         showOverlay1();
-    //     }
-    // }, function() {
-    //     if(!isOverlayOpened1){
-    //         hideOverlay1();
-    //     }
-    // });
+    $('#DivHover1').hover(function() {
+        if(!isOverlayOpened1){
+            showOverlay1();
+        }
+    }, function() {
+        if(!isOverlayOpened1){
+            hideOverlay1();
+        }
+    });
 
 
 
@@ -90,6 +90,7 @@ var isOverlayOpened5 = false;
 
 
 function toggleOverlay1() {
+    alert('Toggling overlay')
     if(!isOverlayOpened1) {
         showOverlay1();
         $('#SpanText1').text("read less");
