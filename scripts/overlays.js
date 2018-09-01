@@ -10,12 +10,10 @@ $(document).ready(function(){
 
         $('#DivHover1').hover(function() {
             if(!isOverlayOpened1){
-                alert('hover show')
                 showOverlay1();
             }
         }, function() {
             if(!isOverlayOpened1){
-                alert('hover hide')
                 hideOverlay1();
             }
         });
@@ -103,12 +101,10 @@ var isOverlayOpened5 = false;
 
 function toggleOverlay1() {
     if(!isOverlayOpened1) {
-        alert('show overlay')
         showOverlay1();
         $('#SpanText1').text("read less");
         isOverlayOpened1 = true;
     } else {
-        alert('hide overlay')
         hideOverlay1();
         $('#SpanText1').text("read more");
         isOverlayOpened1 = false;
