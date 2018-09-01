@@ -6,17 +6,61 @@ $(document).ready(function(){
         toggleOverlay1();
     });
 
-    $('#DivHover1').hover(function() {
-        if(!isOverlayOpened1){
-            alert('hover show')
-            showOverlay1();
-        }
-    }, function() {
-        if(!isOverlayOpened1){
-            alert('hover hide')
-            hideOverlay1();
-        }
-    });
+    if ($(window).width() > 750) {
+
+        $('#DivHover1').hover(function() {
+            if(!isOverlayOpened1){
+                alert('hover show')
+                showOverlay1();
+            }
+        }, function() {
+            if(!isOverlayOpened1){
+                alert('hover hide')
+                hideOverlay1();
+            }
+        });
+
+        $('#DivHover2').hover(function() {
+            if(!isOverlayOpened2){
+                showOverlay2();
+            }
+        }, function() {
+            if(!isOverlayOpened2){
+                hideOverlay2();
+            }
+        });
+
+        $('#DivHover3').hover(function() {
+            if(!isOverlayOpened3){
+                showOverlay3();
+            }
+        }, function() {
+            if(!isOverlayOpened3){
+                hideOverlay3();
+            }
+        });
+
+        $('#DivHover4').hover(function() {
+            if(!isOverlayOpened4){
+                showOverlay4();
+            }
+        }, function() {
+            if(!isOverlayOpened4){
+                hideOverlay4();
+            }
+        });
+
+        $('#DivHover5').hover(function() {
+            if(!isOverlayOpened5){
+                showOverlay5();
+            }
+        }, function() {
+            if(!isOverlayOpened5){
+                hideOverlay5();
+            }
+        });
+
+    }
 
 
 
@@ -24,15 +68,7 @@ $(document).ready(function(){
         toggleOverlay2();
     });
 
-    $('#DivHover2').hover(function() {
-        if(!isOverlayOpened2){
-            showOverlay2();
-        }
-    }, function() {
-        if(!isOverlayOpened2){
-            hideOverlay2();
-        }
-    });
+
 
 
 
@@ -40,15 +76,7 @@ $(document).ready(function(){
         toggleOverlay3();
     });
 
-    $('#DivHover3').hover(function() {
-        if(!isOverlayOpened3){
-            showOverlay3();
-        }
-    }, function() {
-        if(!isOverlayOpened3){
-            hideOverlay3();
-        }
-    });
+
 
 
 
@@ -56,31 +84,13 @@ $(document).ready(function(){
         toggleOverlay4();
     });
 
-    $('#DivHover4').hover(function() {
-        if(!isOverlayOpened4){
-            showOverlay4();
-        }
-    }, function() {
-        if(!isOverlayOpened4){
-            hideOverlay4();
-        }
-    });
+
 
 
 
 
     $('#DivHover5').click(function(){
         toggleOverlay5();
-    });
-
-    $('#DivHover5').hover(function() {
-        if(!isOverlayOpened5){
-            showOverlay5();
-        }
-    }, function() {
-        if(!isOverlayOpened5){
-            hideOverlay5();
-        }
     });
 });
 
