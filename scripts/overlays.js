@@ -6,15 +6,15 @@ $(document).ready(function(){
         toggleOverlay1();
     });
 
-    $('#DivHover1').hover(function() {
-        if(!isOverlayOpened1){
-            showOverlay1();
-        }
-    }, function() {
-        if(!isOverlayOpened1){
-            hideOverlay1();
-        }
-    });
+    // $('#DivHover1').hover(function() {
+    //     if(!isOverlayOpened1){
+    //         showOverlay1();
+    //     }
+    // }, function() {
+    //     if(!isOverlayOpened1){
+    //         hideOverlay1();
+    //     }
+    // });
 
 
 
@@ -22,15 +22,15 @@ $(document).ready(function(){
         toggleOverlay2();
     });
 
-    // $('#DivHover2').hover(function() {
-    //     if(!isOverlayOpened2){
-    //         showOverlay2();
-    //     }
-    // }, function() {
-    //     if(!isOverlayOpened2){
-    //         hideOverlay2();
-    //     }
-    // });
+    $('#DivHover2').hover(function() {
+        if(!isOverlayOpened2){
+            showOverlay2();
+        }
+    }, function() {
+        if(!isOverlayOpened2){
+            hideOverlay2();
+        }
+    });
 
 
 
