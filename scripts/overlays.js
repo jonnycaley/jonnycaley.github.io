@@ -6,15 +6,17 @@ $(document).ready(function(){
         toggleOverlay1();
     });
 
-    $('#DivHover1').hover(function() {
-        if(!isOverlayOpened1){
-            showOverlay1();
-        }
-    }, function() {
-        if(!isOverlayOpened1){
-            hideOverlay1();
-        }
-    });
+    if ($(window).width() > 750) {
+        $('#DivHover1').hover(function() {
+            if(!isOverlayOpened1){
+                showOverlay1();
+            }
+        }, function() {
+            if(!isOverlayOpened1){
+                hideOverlay1();
+            }
+        });
+    }
 
 
 
@@ -22,15 +24,19 @@ $(document).ready(function(){
         toggleOverlay2();
     });
 
-    $('#DivHover2').hover(function() {
-        if(!isOverlayOpened2){
-            showOverlay2();
-        }
-    }, function() {
-        if(!isOverlayOpened2){
-            hideOverlay2();
-        }
-    });
+    if ($(window).width() > 750) {
+
+        $('#DivHover2').hover(function() {
+            if(!isOverlayOpened2){
+                showOverlay2();
+            }
+        }, function() {
+            if(!isOverlayOpened2){
+                hideOverlay2();
+            }
+        });
+
+    }
 
 
 
@@ -38,15 +44,19 @@ $(document).ready(function(){
         toggleOverlay3();
     });
 
-    $('#DivHover3').hover(function() {
-        if(!isOverlayOpened3){
-            showOverlay3();
-        }
-    }, function() {
-        if(!isOverlayOpened3){
-            hideOverlay3();
-        }
-    });
+    if ($(window).width() > 750) {
+
+        $('#DivHover3').hover(function() {
+            if(!isOverlayOpened3){
+                showOverlay3();
+            }
+        }, function() {
+            if(!isOverlayOpened3){
+                hideOverlay3();
+            }
+        });
+
+    }
 
 
 
