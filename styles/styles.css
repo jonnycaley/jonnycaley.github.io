@@ -358,11 +358,6 @@ html, body {
     bottom: 40px;
 }
 
-.HolderViewProject {
-    position: absolute;
-    bottom: 40px;
-}
-
 .PageContentContainer {
     position: absolute;
     bottom: 35%;
@@ -765,7 +760,7 @@ box-shadow:  0 0 0 5px #fff, 0 0 0 6px #5CAAAF;
         bottom: 20px;
     }
     .HolderViewProject {
-        bottom: 0px;
+        left: 20px;
     }
     .DivHover span.hover-right-to-left-white:after {
         /* right: 0; */

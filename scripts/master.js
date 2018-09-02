@@ -299,4 +299,9 @@ if ($(window).width() < 750) {
     $("#DivHover4").removeClass("DivHover");
     $("#DivHover5").removeClass("DivHover");
 
+    $("#DivHover6").removeClass("DivHover");
+    $("#DivHover7").removeClass("DivHover");
+    $("#DivHover8").removeClass("DivHover");
+    $("#DivHover9").removeClass("DivHover");
+
 }
