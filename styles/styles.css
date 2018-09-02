@@ -531,6 +531,11 @@ box-shadow:  0 0 0 5px #fff, 0 0 0 6px #5CAAAF;
 
 /* text with underline onhover animation */
 
+.HolderReadMore {
+    position: absolute;
+    bottom: 40px;
+}
+
 .DivHover {
     display: inline-block;
     float: center;
@@ -542,7 +547,6 @@ box-shadow:  0 0 0 5px #fff, 0 0 0 6px #5CAAAF;
     align-items: flex-end;
     justify-content: center;
     flex-direction: column;
-
 }
 .DivHover span {
     text-align: right;
@@ -752,7 +756,7 @@ box-shadow:  0 0 0 5px #fff, 0 0 0 6px #5CAAAF;
         object-fit: cover;
     }
     .HolderReadMore {
-        bottom: 5px;
+        bottom: 20px;
     }
     .DivHover span.hover-right-to-left-white:after {
         /* right: 0; */
@@ -767,7 +771,7 @@ box-shadow:  0 0 0 5px #fff, 0 0 0 6px #5CAAAF;
         min-height: 0px;
         left: 0px;
     }
-    .PageContentContainer * {
+    .PageContentContainer > * {
         margin-left: 20px;
         margin-right: 20px;
         left: 0px;
@@ -778,6 +782,7 @@ box-shadow:  0 0 0 5px #fff, 0 0 0 6px #5CAAAF;
         margin-bottom: 10px;
     }
     .ContentReadMore {
+        position: relative;
         margin-bottom: 20px;
     }
 
