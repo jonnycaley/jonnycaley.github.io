@@ -173,7 +173,7 @@ html, body {
     overflow-y: hidden;
     justify-content: center;
     align-items: center;
-    transform: translateZ(-1px) scale(2);
+    /* transform: translateZ(-1px) scale(2); */
     background: url("../images/mac-resized.jpg") no-repeat; /* center center fixed; */
     background-size: cover;          /* 200% */
     background-position: center;
