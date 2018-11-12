@@ -292,7 +292,7 @@ $(window).on('mousemove click', function(e) {
 });
 
 if ($(window).width() < 750) {
-    moveBackground();
+    // moveBackground();
     $("#DivHover1").removeClass("DivHover");
     $("#DivHover2").removeClass("DivHover");
     $("#DivHover3").removeClass("DivHover");
