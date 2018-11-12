@@ -698,7 +698,6 @@ box-shadow:  0 0 0 5px #fff, 0 0 0 6px #5CAAAF;
         display: none;
     }
     .SmallText {
-        font-size: 10px;
         line-height: 16px;
     }
     .MediumText {
@@ -730,6 +729,8 @@ box-shadow:  0 0 0 5px #fff, 0 0 0 6px #5CAAAF;
         margin-right: 30%;
         margin-bottom: 100px;
         height: auto;
+        font-size: 4vw;
+        line-height: 5vw;
         color: #474646;
         background-color: none;
         background: none;
